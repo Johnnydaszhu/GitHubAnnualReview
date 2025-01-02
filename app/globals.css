@@ -1,0 +1,65 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #0D1117;
+  --foreground: #c9d1d9;
+  --card: #161B22;
+  --border: #30363D;
+  --primary: #238636;
+  --primary-hover: #2EA043;
+  --link: #58A6FF;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.container {
+  background-color: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
+
+h1, h2, h3 {
+  color: var(--foreground) !important;
+}
+
+a {
+  color: var(--link) !important;
+}
+
+button {
+  background-color: var(--primary);
+  color: #ffffff;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  background-color: var(--primary-hover);
+}
+
+input {
+  background-color: var(--card);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 0.375rem;
+  padding: 0.5rem;
+}
+
+.progress-bar {
+  background-color: var(--primary);
+}
+
+.alert {
+  background-color: var(--card);
+  color: var(--foreground);
+  border: 1px solid var(--border);
+  border-radius: 0.5rem;
+  padding: 1rem;
+}
