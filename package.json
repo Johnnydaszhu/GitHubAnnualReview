@@ -4,7 +4,11 @@
   "description": "该软件是一个基于Streamlit的GitHub统计工具，旨在帮助用户进行年度回顾，分析和可视化他们在GitHub上的贡献。用户只需输入他们的GitHub访问令牌，软件便会自动获取用户的提交数据，并生成详细的统计信息，包括总提交次数、最长连续提交天数、最活跃的提交日和月、所使用的主要编程语言以及获得的星标数等。软件还提供了一个贡献日历，直观展示用户在一年内的提交情况，方便用户回顾过去一年的编程活动和成长。用户可以生成分享图片，方便在社交媒体上展示他们的GitHub成就。通过友好的用户界面和丰富的可视化图表，用户能够轻松了解自己的编程活动和成长轨迹。",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "vercel-build": "next build"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +16,14 @@
   "dependencies": {
     "next": "^15.1.3",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "typescript": "^5.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^15.1.3"
   }
 }
